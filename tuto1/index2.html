@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .container{
+            
+            display: block;
+            width: 30%;
+            margin: auto;
+            box-shadow: 3px 3px gray;
+            background-color: aquamarine;
+            
+            padding: 15px;
+
+
+        }
+        h2{
+            text-align: center;
+        }
+        .form{
+            display: block;
+            width: 50%;
+            margin: auto;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Welcome to Text Utility</h2>
+</div>
+<div class="form">
+    <form action="/analyze" method="get">
+        <textarea name='text' style='margin: 0px; width: 721px; height: 400px;'></textarea>
+        <input type="checkbox" name="removePunctuations"> Remove Punctuations <br>
+        <input type="checkbox" name="capital"> To Upper Case <br>
+        <input type="checkbox" name="newLine"> Remove New Lines <br>
+        <button type="submit">Analyze</button>
+
+        </textarea>
+    </form>
+</div>
+    
+</body>
+</html>
